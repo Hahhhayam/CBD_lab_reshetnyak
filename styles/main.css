@@ -7,3 +7,17 @@ body {
     opacity: 1;
     background: linear-gradient(135deg, #bfbfa955 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #bfbfa9 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #bfbfa955 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #bfbfa9 25%, #e3e3e3 25%) 0px 0/ 20px 20px;
 }
+
+.thtop {
+    background-color: black;
+    color: #ffffff;
+}
+
+.th {
+    background-color: gray;
+    color: #000;
+}
+
+.tdtextbg {
+    background-color: rgb(221, 221, 221);
+}
