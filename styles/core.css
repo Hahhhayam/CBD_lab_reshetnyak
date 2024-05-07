@@ -57,3 +57,33 @@ a {
 #start-history {
     font-size: x-large;
 }
+
+.generalnavigation {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.desc {
+    margin: 10px;
+    padding: 10px;
+    font-size: x-small;
+}
+
+table {
+    font-size: small;
+}
+
+.thtop {
+    font-size: x-large;
+}
+
+.tdtextbg {
+    background-color: rgb(216, 213, 213);
+}
+
+.th {
+    background-color: rgb(141, 141, 141);
+    text-align: right;
+}
