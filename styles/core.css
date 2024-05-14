@@ -49,6 +49,17 @@ a {
     padding: 20px;
 }
 
+p + p {
+    font-size: small;
+}
+
+
+
+.topic a {
+    color: rgb(255, 174, 0) !important;
+    font-size: small;
+}
+
 .gohome {
     background-color: black;
     color: red;
@@ -63,6 +74,10 @@ a {
     margin: 10px;
     padding: 10px;
     font-size: xx-large;
+}
+
+.textblock > b {
+    color: #bfbfa9;
 }
 
 .desc {
