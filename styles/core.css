@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Agency FB Cyrillic';
+	src: url('../styles/AgencyFBCyrillic/AgencyFBCyrillic.eot');
+	src: local('Agency FB Cyrillic'), local('AgencyFBCyrillic'),
+		url('../styles/AgencyFBCyrillic/AgencyFBCyrillic.eot?#iefix') format('embedded-opentype'),
+		url('../styles/AgencyFBCyrillic/AgencyFBCyrillic.woff') format('woff'),
+		url('../styles/AgencyFBCyrillic/AgencyFBCyrillic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: #e3e3e3;
+    opacity: 1;
+    background: 
+        linear-gradient(135deg, #bfbfa955 25%, transparent 25%) -10px 0/ 20px 20px, 
+        linear-gradient(225deg, #bfbfa9 25%, transparent 25%) -10px 0/ 20px 20px, 
+        linear-gradient(315deg, #bfbfa955 25%, transparent 25%) 0px 0/ 20px 20px, 
+        linear-gradient(45deg, #bfbfa9 25%, #e3e3e3 25%) 0px 0/ 20px 20px;
+    font-family: Agency FB Cyrillic;
+}
+
+a {
+    color: lightblue !important;
+}
+
+.sitename {
+    font-size: xxx-large;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 251, 0);
+    font-family: Agency FB Cyrillic;
+    padding: 20px;
+}
+
+.textblock{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 15px;
+    color: white;
+}
+
+.topic {
+    font-size: xxx-large;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgb(255, 251, 0);
+    font-family: 'Agency FB Cyrillic';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+.gohome {
+    background-color: black;
+    color: red;
+}
+
+#start-history {
+    font-size: x-large;
+}
+
+.generalnavigation {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.desc {
+    margin: 10px;
+    padding: 10px;
+    font-size: x-small;
+}
+
+table {
+    font-size: small;
+}
+
+.thtop {
+    font-size: x-large;
+}
+
+.tdtextbg {
+    background-color: rgb(216, 213, 213);
+}
+
+.th {
+    background-color: rgb(141, 141, 141);
+    text-align: right;
+}
