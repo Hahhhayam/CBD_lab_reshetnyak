@@ -1,3 +1,18 @@
+const links = [
+    "https://t.me/peperevenge",
+    "reshetnyak.sergiy@lll.kpi.ua"
+]
+
+function GetAll() {
+    let res = '';
+    for (let i = 0; i < links.length; i++)
+    {
+        res += links[i] + " "
+    }
+
+    return res;
+}
+
 function changeBackground() {
     document.body.style.backgroundColor = "lightblue";
     setTimeout(() => {
@@ -5,15 +20,22 @@ function changeBackground() {
     }, 5000);
 }
 
-function order() {
-    location.href = "https://t.me/peperevenge";
+function order(index) {
+    if (index === 'tg')
+    {
+        location.href = links[0];
+    }
+    if (index === 'mail')
+    {
+        location.href = links[1];
+    }
 }
 
 function modifyContent() {
     const content = document.getElementById('content');
 
     // Використання innerHTML
-    content.innerHTML = "<p>Примусова <strong>РЕКЛАМА</strong>.</p> <button onclick='order()'>Замовити</button> ";
+    content.innerHTML = "<p>Примусова <strong>РЕКЛАМА</strong>.</p> <button onclick='order(`tg`)'>Замовити</button> ";
 
     // Використання outerHTML
     console.log("outerHTML:", content.outerHTML);
@@ -37,15 +59,16 @@ function modifyDOM() {
     // Вставка елементів
     content.append(newDiv);
     content.prepend("Тільки сьогодні! ");
-    content.after("Щодо замовлення - контакт https://t.me/peperevenge. ");
+    content.after(
+        `Щодо замовлення - контакт ${GetAll()}`);
 
     // Заміна елемента
     const replaceDiv = document.createElement('div');
-    replaceDiv.textContent = 'Цей текст замінює початковий контент.';
+    replaceDiv.textContent = 'Ну замов будь ласка ↓';
 
     setTimeout(() => {
         content.replaceWith(replaceDiv);
-    }, 5000);
+    }, 2500);
 
     // Видалення елемента
     setTimeout(() => {
