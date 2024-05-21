@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
     <meta name = "author" content = "peperevenge">
+    <meta charset="UTF-8">
     <title>
         Account
     </title>
     <link rel="stylesheet" type="text/css" href="styles/core.css">
+    <script src="js/buttonLib.js"></script>
 </head>
 <body>
     <h2 class="topic">Аккаунт <a href="index.html">вийти</a></h2>
@@ -14,4 +16,7 @@
         <p>Тут ви можете змінювати свої дані, налаштування конфіденційності та багато іншого.</p> 
         <p>Ми рекомендуємо періодично перевіряти ваш профіль, щоб забезпечити максимальну безпеку та зручність.</p>
     </div>
+    <button onclick="dialogWithUser()">Розпочати діалог</button>
+    <button onclick="showDeveloperInfo('Решетняк', 'Сергій')">Про розробника</button>
+    <button onclick="compareStrings('Іванов', 'Іван')">Порівняти дві строки</button>
 </body>
