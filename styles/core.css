@@ -20,8 +20,20 @@ body {
     font-family: Agency FB Cyrillic;
 }
 
-a {
-    color: lightblue !important;
+a:link {
+    color: lightblue;
+}
+
+a:hover {
+    color: rgb(0, 255, 85);
+}
+
+a:active {
+    color: black;
+}
+
+a:visited {
+    color: lightblue
 }
 
 .sitename {
@@ -30,6 +42,8 @@ a {
     color: rgb(255, 251, 0);
     font-family: Agency FB Cyrillic;
     padding: 20px;
+    position: sticky;
+    top: 20px;
 }
 
 .textblock{
@@ -47,26 +61,33 @@ a {
     font-style: normal;
     text-align: center;
     padding: 20px;
+    position: sticky;
+    top: 20px;
 }
 
-p + p {
-    font-size: small;
+p {
+    font-size: medium;
+    margin: 0;
 }
-
-
 
 .topic a {
     color: rgb(255, 174, 0) !important;
     font-size: small;
 }
 
+a::after {
+    content: "<";
+}
+
+
+a::before {
+    content: ">";
+}
+
 .gohome {
     background-color: black;
     color: red;
-}
-
-#start-history {
-    font-size: x-large;
+    float: left;
 }
 
 .generalnavigation {
@@ -102,3 +123,13 @@ table {
     background-color: rgb(141, 141, 141);
     text-align: right;
 }
+
+.start-call {
+    font-size: large;
+    font-style: italic;
+}
+
+li:first-child {
+    border: 1px solid orange;
+}
+  
