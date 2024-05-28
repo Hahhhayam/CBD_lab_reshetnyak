@@ -7,6 +7,7 @@
     </title>
     <link rel="stylesheet" type="text/css" href="styles/core.css">
     <script src="js/listHighligther.js" ></script>
+    <script src="js/playlist.js"></script>
 </head>
 <body>
     <p id="content"></p>
@@ -17,14 +18,16 @@
         <p> <span class="start-call">Розпочніть</span> свою подорож прямо зараз!</p>
         <p>Незалежно від того, чи ви новачок у світі ігор, чи досвідчений гравець, у нас є щось цікаве для <a href="#start-history">кожного</a>.</p>
     </div>
-    
+
     <h2 class="textblock">Навігація</h2>
     <ul class="generalnavigation">
         <li>До <a href="Account.html" >аккаунту</a></li>
         <li>До <a href="Catalogs.html">каталогів</a></li>
         <li>До <a href="Rewiews.html">відгуків та ревізій</a></li>
     </ul>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7K7E7LKK51PezScgsvVg9Y?utm_source=generator&theme=0" 
-    width="100%" height="152" frameBorder="0" allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="playlist" id="playlist">
+        <img src="feed/1.jpg" class="drag">
+        <img src="feed/2.jpg" class="drag">
+        <img src="feed/3.jpg" class="drag">
+    </div>
 </body>
