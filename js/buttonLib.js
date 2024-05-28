@@ -31,3 +31,24 @@ function compareStrings() {
         alert("Рядки рівні.");
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menu = document.getElementById("menu");
+    menu.addEventListener("click", function(e) {
+        const t = e.target.dataset.action;
+
+        switch (t) {
+            case "dialog":
+                dialogWithUser();
+                break;
+
+            case "info":
+                showDeveloperInfo(`Reshetniak`, `Serhii`);
+                break;
+
+            case "compare":
+                compareStrings();
+                break;
+        }
+    })
+});
