@@ -127,4 +127,8 @@ table {
 li:first-child {
     border: 1px solid orange;
 }
+
+#zoom {
+    transition: transform 0.1s
+}
   
